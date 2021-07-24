@@ -1,16 +1,9 @@
-k=int(input("what number do you want to check k:"))
-n=int(input("Enter the size of array n:"))
-count=0
-li=[0]*n
-left=0
-right=len(li)
-for i in range(0,n):
-    e=int(input())
-    li[i]=e
-print("all arrays are:",li)
-for el in range(0,right):
-    if li[el]==k:
-        count+=1
-print("total numbers:",count)
-
-
+li1=[1,3,4,5,6]
+li2=[2,3,4,9,8,6,1]
+x=len(li1)
+y=len(li2)
+for l in range(0,x):
+    for m in range(0,y):
+        if li1[l]==li2[m]:
+            print(li1[l])
+            
