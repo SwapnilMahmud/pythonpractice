@@ -88,6 +88,7 @@ print("after swap b:",b)
 
 ///////////////////////////////////
 
+swapping in kth element::::::::::::::::::::::::::::
 k=int(input("please enter the swap element:"))
 n=int(input("please enter the array size:"))
 temp=0
@@ -102,4 +103,37 @@ temp=li[k-1]
 li[k-1]=li[n-k]
 li[n-k]=temp
 print("after swapping arrays are:",li)
+
+
+/////////////////
+
+took array element from user:::::::::::::::::::::
+n=int(input("please enter the array size n:"))
+li=[0]*n
+print(li)
+for i in range(0,n):
+    e=int(input())
+    li[i]=e
+    print(li)   
+
+///////////////////////
+
+a number how many times in an array::::::::
+k=int(input("what number do you want to check k:"))
+n=int(input("Enter the size of array n:"))
+count=0
+li=[0]*n
+left=0
+right=len(li)
+for i in range(0,n):
+    e=int(input())
+    li[i]=e
+print("all arrays are:",li)
+for el in range(0,right):
+    if li[el]==k:
+        count+=1
+print("total numbers:",count)
+
+
+
     
