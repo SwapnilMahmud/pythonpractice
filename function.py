@@ -1,20 +1,16 @@
-def ar():  
-    bst=[ ]
-    t=int(input("target:"))
-    n=int(input("size:"))
-    for i in range(0,n):
-        e=int(input())
-        bst.append(e)
-        print("size:",bst)
+def two_sum(bst,t):
     left=0
-    right=len(bst)-1
-    curr=bst[left]+bst[right]
+    right=len(bst)-1    
     while left<=right:
-        if curr<t:
-            left+=1
-        elif curr>t:
-            right-=1
-        else:
-            return[left,right]
-    return[-1,-1]    
-ar()
+            curr=bst[left]+bst[right]
+            if curr<t:
+                left+=1
+            elif curr>t:
+                right-=1
+            else:
+                return[left,right]
+     return[-1,-1]
+bst=[ 1,9,4,3,5,7]
+t=9
+print(two_sum(bst,t))
+  
