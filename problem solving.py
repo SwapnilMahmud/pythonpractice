@@ -7,7 +7,7 @@ while left<=right:
     sum=sum+li[left]  
     left+=1
 print(sum)
-//////////////////////////////
+///////////////////////////////
 
 
 Reverse an array:::::::::::::::
@@ -259,4 +259,25 @@ print("\r")
 
 
 
+/////////////////////////////////
+
+Rotation:::::::::::::::::::;
+def firstfunction(arr,d,n):
+    for i in range(d):
+        secondfunction(arr,n)
+
+def secondfunction(arr,n):
+    temp=arr[0]
+    for i in range(n-1):
+        arr[i]=arr[i+1]
+    arr[n-1]=temp
+
+def printA(arr,size):
+    for i in range(size):
+        print(arr[i], end=" ")
+    
+        
+arr=[1,2,3,4,5,6,7]
+firstfunction(arr,2,7)
+printA(arr,7)
 
