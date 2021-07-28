@@ -219,4 +219,44 @@ arr.insert(2,6)
 print("after insertion array is :",end=" ")
 for i in range(0,5):
     print(arr[i],end=" ")
+::::::::::::::::::::::::::::::::::::////
+import array
+arr=array.array('i',[1,2,3,1,5])
+
+print("the new array is :",end=" ")
+for i in range(0,5):
+    print(arr[i],end=" ")
+print("\r")
+
+print("poped element is :",end=" ")
+print(arr.pop(0));
+
+print("after pop array is :",end=" ")
+for i in range(0,4):
+    print(arr[i],end=" ")
+print("\r")
+
+arr.remove(5)
+print ("The array after removing is : ",end="")
+for i in range (0,3):
+    print (arr[i],end=" ")
+:::::::::::::::::::::::::::///////
+import array
+arr=array.array('i',[1,2,3,1,5])
+
+print("the new array is :",end=" ")
+for i in range(0,5):
+    print(arr[i],end=" ")
+print("\r")
+
+print("poped element is :",end=" ")
+print(arr.index(5));
+arr.reverse()
+print("after pop array is :",end=" ")
+for i in range(0,5):
+    print(arr[i],end=" ")
+print("\r")
+
+
+
 
