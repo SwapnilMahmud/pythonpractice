@@ -146,6 +146,77 @@ for l in range(0,x):
         if li1[l]==li2[m]:
             print(li1[l])
             
+//////////////////////////////
+
+print array:::::::::::::::::::::::
+import array as arr
+array_num=arr.array('i',[10,11,12,13,14,15,16,17,18,19,20])
+print("arrays:")
+for i in range(len(array_num)):
+    print(array_num[i], end=' ')
+
+////////////////////////////////////
+
+misssing number in an array::::::::::::
 
 
+import array as arr
+def two_sum(nums):
+    return sum(range(10,21))-sum(list(nums))
+
+array_num=arr.array("i",[10,11,12,13,14,15,16,18,19,20])
+print("orginal array:")
+for i in range(len(array_num)):
+    print(array_num[i],end=" ")
+print("\nmissing number in array:",two_sum(array_num))
+        
+-
+    ////////////////////////////////////////
     
+    remove duplicate array:::::::::::::
+    
+    li=[1,2,2,3,4,4,5,7,7,7,7,7]
+res=[]
+for i in li:
+    if i not in res:
+        res.append(i)
+print(res)
+
+/////////////////////////////////////
+
+def remove_e(arr,n):
+    for i in range(0,l):
+        if li[i]!=n:
+            res.append(li[i])
+    return res
+
+li=[1,1,2,3,4,4,5]
+l=len(li)
+res=[]
+n=int(input("which element do you want to remove:"))
+print(remove_e(res,n))
+    
+//////////////////////////////
+
+array:
+
+import array
+
+
+arr=array.array('i',[1,2,3])
+print("new array is :",end=" ")
+for i in range(0,3):
+    print(arr[i],end=" ")
+print("\r")
+
+arr.append(4)
+print("append array is :",end=" ")
+for i in range(0,4):
+    print(arr[i],end=" ")
+print("\r")
+
+arr.insert(2,6)
+print("after insertion array is :",end=" ")
+for i in range(0,5):
+    print(arr[i],end=" ")
+
