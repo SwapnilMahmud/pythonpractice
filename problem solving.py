@@ -289,4 +289,21 @@ for i in range(n-1,0,-1):
     li[i]=li[i-1]
 li[0]=temp
 print(li)
+
+/////////////////////////////////////////////////
+Remove duplicate element from array::::::::::::::::::::::::
+li=[2,2,3,4,5,2,2,7,2,6,9,3,1]
+l=len(li)-1
+temp=0
+count=0
+s=int(input("enter number:"))
+for i in range(l):
+    if li[i]==s:
+        temp=li[i]
+    else:
+        count+=1
+        print("\n",li[i])
+print("\ntotal number:",count)
+    
+
    
