@@ -280,4 +280,13 @@ def printA(arr,size):
 arr=[1,2,3,4,5,6,7]
 firstfunction(arr,2,7)
 printA(arr,7)
-
+////////////////////////////////
+li=[1,2,3,4,5,6,7]
+n=len(li)
+temp=0
+temp=li[n-1]
+for i in range(n-1,0,-1):
+    li[i]=li[i-1]
+li[0]=temp
+print(li)
+   
