@@ -305,5 +305,30 @@ for i in range(l):
         print("\n",li[i])
 print("\ntotal number:",count)
     
+//////////////////////////////////////////////////
+
+def pairInSortedRotated( arr, n, x ):
+    left=0
+    right=n-1
+    while left<right:
+        curr=arr[left]+arr[right]
+        if curr<x:
+            left+=1
+        elif curr>x:
+             right-=1
+        else:
+             return True
+    return False
+  
+arr = [ 6, 8, 9, 10,11, 15,]
+sum = 32
+n = len(arr)
+if (pairInSortedRotated(arr, n, sum)):
+	print ("Array has two elements with sum")
+else:
+	print ("Array doesn't have two elements with sum  ")
+
+	
+
 
    
