@@ -356,3 +356,42 @@ for i in range(l):
     if min>li[i]:
         min=li[i]
 print(min)
+
+::::::::::::::take input from user::
+m=list(map(int,input().split()))
+.......................
+.......................
+reverse:
+
+li=[1,2,3,4,5]
+for i in range(len(li)-1,-1,-1):
+    print(li[i])
+::::::::::::::::::::::
+print array
+li=[1,2,3,4,5]
+for i in range(len(li)):
+    print(li[i])
+::::::::::::::::::
+enter element in an giving position:
+li=[1,2,3,4,5,]
+n=int(input("Enter an element:"))
+p=int(input("Enter the position:"))
+li.append(-1000)
+print("size list:",li)
+print("working on while loop:")
+for i in range(4, p-2,-1):
+    li[i+1]=li[i]
+    print(li)
+li[p-1]=n
+print("Finish list:",li) 
+
+:::::::::::::
+searching number if found return index or not then return -1
+li=[1,2,3,4,5,6,7]
+s=int(input("searching number:"))
+l=len(li)
+e=0
+if s not in li:
+    print("-1")
+else:
+    print( li.index(s))
