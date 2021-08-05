@@ -330,5 +330,29 @@ else:
 
 	
 
-
-   
+///////////////////////////////////////////////
+n=int(input("please give an array size:"))
+arr=[0]*n
+for i in range(0,n):
+    e=int(input())
+    arr[i]=e
+print("Total arrays are:")
+for i in range(0,n):
+    print("",arr[i])
+..........................................
+max:::::::::::::::::::::
+li=[1,2,3,4,59,5,7,198,543,555,76,542]
+l=len(li)
+max=0
+for i in range(l):
+    if max<li[i]:
+        max=li[i]
+print(max)
+min::::::::::::::::::::
+li=[-1,2,3,4,59,5,0,7,198,543,555,76,542]
+l=len(li)
+min=li[0]
+for i in range(l):
+    if min>li[i]:
+        min=li[i]
+print(min)
