@@ -458,3 +458,32 @@ while left<right:
     left+=1
     right-=1
 print(min)
+:::::::::::::::::::
+search by two pointer:
+li=[2,3,4,-5000,1,8,7,0,-100]
+search=li[0]
+left=0
+s=-100
+right=len(li)-1
+while left<right:
+    if li[left]==s:
+        search=li[left]        
+    elif li[right]==s:
+        search=li[right]
+    left+=1
+    right-=1
+print(li.index(search))
+::::::::::::::::::::::::
+max by two pointer:
+li=[2000,3,4,-5000,1,8,7,0,100,900]
+max=li[0]
+left=0
+right=len(li)-1
+while left<right:
+    if li[left]>max:
+        max=li[left]        
+    elif li[right]>max:
+        max=li[right]
+    left+=1
+    right-=1
+print(li.index(max))
