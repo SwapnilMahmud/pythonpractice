@@ -395,3 +395,66 @@ if s not in li:
     print("-1")
 else:
     print( li.index(s))
+    
+    
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+def findElement(arr, n, key):
+    for i in range (n):
+            if (arr[i] == key):
+                return i
+    return -1
+
+arr = [12, 34, 10, 6, 40]
+key = 40
+n = len(arr)
+index = findElement(arr, n, key)
+if index != -1:
+	print ("element found at position: " + str(index + 1 ))
+else:
+	print ("element not found")
+    
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+def insert(arr, element):
+    arr.append(element)
+ 
+# declaring array and key to insert
+arr = [12, 16, 20, 40, 50, 70]
+key = 26  
+# array before inserting an element
+print ("Before Inserting: ")
+print (arr)  
+# array after Inserting element
+insert(arr, key)
+print("After Inserting: ")
+print (arr)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# from an unsorted array
+
+# Declaring array and key to delete
+arr = [10, 50, 30, 40, 20]
+key = 30
+
+print("Array before deletion:")
+print (arr)
+
+# deletes key if found in the array
+# otherwise shows error not in list
+arr.remove(key)
+print("Array after deletion")
+print(arr)
+
+
+:::::::::::::::::
+min by two pointer:
+li=[2,3,4,5,1,8,7,0,-100]
+min=li[0]
+left=0
+right=len(li)-1
+while left<right:
+    if li[left]<min:
+        min=li[left]        
+    elif li[right]<min:
+        min=li[right]
+    left+=1
+    right-=1
+print(min)
