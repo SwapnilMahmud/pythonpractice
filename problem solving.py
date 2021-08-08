@@ -487,3 +487,13 @@ while left<right:
     left+=1
     right-=1
 print(li.index(max))
+:::::::::::::::::::::::::::::::
+removeduplicate
+nums=[0,0,0,0,0,1,1,1,1,2,2,3,3,4,4,5,5,6]
+length =0
+if len(nums) == 0: print("not")
+for i in range(1,len(nums)):
+    if nums[length] < nums[i]:
+        length += 1
+        nums[length] = nums[i]
+print(nums)
