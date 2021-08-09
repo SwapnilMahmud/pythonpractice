@@ -522,3 +522,10 @@ else:
     print('no')
 
 ''''''''''''''''''''''''''''''''
+my_string='         Hello world'
+my_string=my_string.strip()#strip remove white space
+print(my_string)
+\\\\\\\\\\\\\\\\\\\
+my_string='Hello world'
+my_string=my_string.upper()
+print(my_string)
