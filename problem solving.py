@@ -497,3 +497,28 @@ for i in range(1,len(nums)):
         length += 1
         nums[length] = nums[i]
 print(nums)
+:::::::::::::::::::::::::::::::::::
+two sum::
+numbers=[2,7,8,9,12,43]
+target=9
+left=0
+right=len(numbers)-1
+while left<right:
+    curr=numbers[left]+numbers[right]
+    if curr<target:
+        left+=1
+    elif curr>target:
+        right-=1
+    else:
+        print (left+1,right+1)
+print ("-1")
+
+:::::::::::::::::::::::::::::::::::::::::::::
+sting:::\\\\\\\\\\\\\\\\\\\\\\\\\\]]]]]
+greeting="Hello"
+if 'e' in greeting:
+    print('yes')
+else:
+    print('no')
+
+''''''''''''''''''''''''''''''''
