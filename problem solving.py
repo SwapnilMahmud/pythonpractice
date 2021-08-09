@@ -529,3 +529,8 @@ print(my_string)
 my_string='Hello world'
 my_string=my_string.upper()
 print(my_string)
+///////////////////////////
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        word=s.split()
+        return len(word[-1])
