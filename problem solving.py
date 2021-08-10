@@ -534,3 +534,17 @@ class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         word=s.split()
         return len(word[-1])
+        
+        
+...................................
+::::::::::::::::::::::::::::::;::::
+arr=[1,2,1]
+l=len(arr)
+s=0
+
+while s<l:
+    x=arr[s]
+    s+=1
+    arr.append(x)
+print(arr)
+output:[1,2,1,1,2,1]
