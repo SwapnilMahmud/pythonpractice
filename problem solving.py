@@ -548,3 +548,15 @@ while s<l:
     arr.append(x)
 print(arr)
 output:[1,2,1,1,2,1]
+
+.................\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+this way can take input:
+
+.................
+>>>>>>>>>>>>>>>>>>>>>
+Reverse a string::::
+s="ReversE"
+l=len(s)
+for i in range(l-1,-1,-1):
+    print(s[i])
+>>>>>>>>>>>>>>>>>>>>>>>
