@@ -567,3 +567,10 @@ for i in range(l):
     p=s[i].lower()
     print(p)
 \.......................\
+concatinate+reverse+lower<----------------------------
+s1="SwapniL"
+s2="MahmuD"
+s3=s1+s2
+l=len(s3)
+for i in range(l-1,-1,-1):
+    print(s3[i].lower())
