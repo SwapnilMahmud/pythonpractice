@@ -560,3 +560,11 @@ l=len(s)
 for i in range(l-1,-1,-1):
     print(s[i])
 >>>>>>>>>>>>>>>>>>>>>>>
+string convert lo lowercase:
+s="ReversE"
+l=len(s)
+s.lower()
+for i in range(l):
+    p=s[i].lower()
+    print(p)
+\.......................\
