@@ -574,3 +574,24 @@ s3=s1+s2
 l=len(s3)
 for i in range(l-1,-1,-1):
     print(s3[i].lower())
+    
+.....................................................>>>>
+print even string..... 
+s="swapnil"
+l=len(s)
+out=" "
+for i in range(l):
+    if i%2==0:
+        out+=s[i]
+print(out)
+///////////////////////////
+s=input()
+s=s.lower()
+l=set(s)
+p=len(l)
+print(l)
+if p%2==0:
+     print("CHAT WITH HER!")
+else:
+    print("IGNORE HIM!")
+
