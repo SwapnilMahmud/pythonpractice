@@ -684,6 +684,9 @@ class DoubleLinkedList:
     def remove_last(self):
         if self.tail is not None:
             self.__remove_node(self.tail)
+    def remove_first(self):
+        if self.head is not None:
+            self.__remove_node(self.head)
     def __str__(self):
         vals=[ ]
         node=self.head
@@ -702,7 +705,7 @@ my_list.add(4)
 my_list.add(6)
 my_list.add(6)
 print(my_list)
+my_list.remove_first()
 my_list.remove_last()
 print(my_list)
 print(my_list.size)
-
