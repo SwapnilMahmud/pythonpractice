@@ -28,6 +28,7 @@ class DoubleLinkedList:
             self.tail=node.prev
         else:
             node.next.prev=node.prev
+        self.size-=1
     def remove(self,value):
         node=self.head
         while node is not None:
@@ -59,3 +60,4 @@ my_list.add(6)
 print(my_list)
 my_list.remove(6)
 print(my_list)
+print(my_list.size)
