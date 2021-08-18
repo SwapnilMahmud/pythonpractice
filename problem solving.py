@@ -662,3 +662,17 @@ my_list.remove_first()
 my_list.remove_last()
 print(my_list)
 print(my_list.size)
+::::::::::::::::::::::::::::::::::::::bubble sort::::::::::
+arr=[15,3,4,7,8,14,5]
+n=len(arr)
+for i in range(0,n-1):
+    flag=0
+    for j in range(0,n-1-i):
+        if arr[j]>arr[j+1]:
+            temp=arr[j]
+            arr[j]=arr[j+1]
+            arr[j+1]=temp
+            flag=1
+    if flag==0:
+        break
+print(arr)
