@@ -693,3 +693,26 @@ def two(arr, target):
 arr=[1,2,3,4,5,6,7,8,9]
 target=9
 print(two(arr,target))
+
+::::::::::::::::::::::::::::::::::::::::
+nums=[1,3,4,7,10]
+target=8
+diff=max(nums)
+l=0
+ind1=0
+ind2=0
+r=len(nums)-1
+while l<r:
+     sum=nums[l]+nums[r]
+     if(abs(sum-target)<diff):
+          ind1=l
+          ind2=r
+          diff=abs(sum-target)
+     if sum>target:
+          r-=1
+     else:
+          l+=1
+print(nums[ind1],nums[ind2],nums[ind1]+nums[ind2])
+     
+
+
