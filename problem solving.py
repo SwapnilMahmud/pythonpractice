@@ -676,3 +676,20 @@ for i in range(0,n-1):
     if flag==0:
         break
 print(arr)
+
+:::::::::::::::::::::::::::::::::::two_sum:::::::::
+def two(arr, target):
+    left=0
+    right=len(arr)-1    
+    while left<right:
+        curr=arr[left]+arr[right]
+        if curr<target:
+            left+=1
+        elif curr>target:
+            right-=1
+        else:
+            return[left,right]
+    return[-1,-1]
+arr=[1,2,3,4,5,6,7,8,9]
+target=9
+print(two(arr,target))
