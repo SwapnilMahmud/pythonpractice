@@ -716,3 +716,26 @@ print(nums[ind1],nums[ind2],nums[ind1]+nums[ind2])
      
 
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::cf 381:::::::::::::
+n=int(input())
+arr=list(map(int,input().split()))
+sereja=0
+dima=0
+left=0
+right=n-1
+for i in range(0,n):
+    if i%2==0 or i==0:
+        if arr[left]>=arr[right]:
+            sereja+=arr[left]
+            left+=1
+        else:
+            sereja+=arr[right]
+            right-=1
+    else:
+         if arr[left]>=arr[right]:
+            dima+=arr[left]
+            left+=1
+         else:
+            dima+=arr[right]
+            right-=1
+print(sereja,dima)
