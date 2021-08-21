@@ -739,3 +739,23 @@ for i in range(0,n):
             dima+=arr[right]
             right-=1
 print(sereja,dima)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::cf59::::
+lower = 0
+for i in sentence:
+    if i >='A' and i <= 'Z':
+        upper += 1
+    elif i >= 'a' and i <= 'z':
+        lower += 1
+print("Upper case: " + str(upper))
+print("Lower case: " + str(lower))
+
+if upper==lower:
+    sentence=sentence.lower()
+    print(sentence)
+elif lower>upper:
+    sentence=sentence.lower()
+    print(sentence)
+elif upper>lower:
+    sentence=sentence.upper()
+    print(sentence)
