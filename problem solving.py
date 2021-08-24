@@ -798,4 +798,11 @@ arr=[10,22,34,55,57,67,70,88,99]
 data=99
 l=len(arr)
 print(BinarySearch(arr,l,data))
-
+:::::::::::::::::::::::::::::::::::::228A - Is your horseshoe on the other hoof?
+arr=list(map(int,input().split()))
+li=set(arr)
+l=len(li)
+if li==4:
+    print(4)
+else:
+    print(4-l)
