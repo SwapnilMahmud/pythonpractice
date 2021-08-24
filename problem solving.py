@@ -779,7 +779,7 @@ for i in range(n):
             cnt+=1
             print(cnt)
 print(cnt)
-::::::::::::::::::::::::::::binary search python:::::::::;;
+::::::::::::::::::::::::::::binary search python:::::::::::::::::::::::::
 def BinarySearch(arr,n,data):
     l=0
     r=n-1
