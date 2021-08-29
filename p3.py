@@ -1,17 +1,13 @@
-def BinarySearch(arr,data,n):
-    l=0
-    r=n-1
-    while l<=r:
-        m=(l+r)/2
-        mid=int(m)
-        if  data==arr[mid]:
-            return mid
-        elif data<arr[mid]:
-            r=mid-1
-        else:
-            l=mid+1
-    return -1
-arr=[11,22,23,34,45,56,67,78,89,90]
-data=89
+arr=[13,11,21,22,32,31,43,33]
+data=31
+found=0
 n=len(arr)
-print(BinarySearch(arr,data,n))
+for i in range(n):
+    if data==arr[i]:
+        print("data found position:",i)
+        found=1
+        break
+if found==0:
+    print("data not found")
+        
+
