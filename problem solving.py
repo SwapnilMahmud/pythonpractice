@@ -819,3 +819,13 @@ for i in range(a):
         if i**2+j==n and j**2+i==m:
             cnt+=1
 print(cnt)
+:::::::::::::::::::::::::::::::tram 116
+k=0
+max=0
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split())
+    k=b-a+k
+    if (max<k):
+        max=k
+print(max)
