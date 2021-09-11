@@ -849,5 +849,13 @@ for i in range(n):
     p[li[i]-1]=i+1
 for i in range(n):
     print(p[i],end=" ")
-    
+    .....
 
+::::::::::::::::::::::::::::::::::::::sqrt by python::::::
+import math
+T=int(input())
+while(T>0):
+    x=int(input())
+    print(math.floor(math.sqrt(x)))
+    T-=1
+.............................................
