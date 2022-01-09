@@ -76,5 +76,21 @@ print(li)
 
 
 
+////////////////////////
+def Palindrome(arr,n):
+    s=0
+    l=n-1
+    while s<=l:
+        if arr[s]!=arr[l]:
+            return  1
+        s+=1
+        l-=1
+    return -1
 
+arr="maaaaddsaaaam"
+l=len(arr)
+if(Palindrome(arr,l)==1):
+    print("false")
+else:
+    print("true")
     
